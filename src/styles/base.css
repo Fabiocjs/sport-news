@@ -1,6 +1,39 @@
 body {
+	margin: 0;
 	font-size: 1.1rem;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #222;
-	background-color: #eee;
+	background-color: #fff;
 }
+
+* + * {
+	margin-block: 6px;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	margin-bottom: 16px;
+}
+
+p + p {
+	margin-top: 12px;
+}
+
+.btn {
+	display: inline-block;
+	margin-top: 20px;
+	text-decoration: none;
+padding: 10px 30px;
+background-color: #C20E19; 
+color: white;
+border-style:inset;
+}
+
+.bienvenue {
+	color: #C20E19;
+	font-size: 3rem;
+}
+

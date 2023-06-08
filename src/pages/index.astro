@@ -7,37 +7,64 @@ import BaseLayout from '../layouts/Base.astro'
 
 		
 		
-			<h1>🧑‍🚀 Salut les Astronautes&nbsp;!</h1>
-			<p>
-				Bienvenue dans ce template/boilerplate/starter <a href="https://astro.build/">Astro</a>. Ce projet vous servira de base pour réaliser votre blog.
-			</p>
-			<p>
-				Ce template ne comporte pas grand chose pour l'instant. Nous allons le faire évoluer ensemble pendant les cours. Vous devrez certainement y travailler dessus en dehors des cours également.
-			</p>
-			<p>Afin de prendre ce template en main, voici quelques petits trucs à tester&nbsp;:</p>
-			<ul>
-				<li>Éditer cette page dans <code>src/pages/index.astro</code></li>
-				<li>
-					Ajouter du CSS dans <code>src/styles/global.css</code>
-				</li>
-				<li>
-					Créer des composants pour le header et le footer dans <code>src/components/</code
-					>
-				</li>
-				<li>
-					Créer un premier article dans <code>src/content/blog/</code>
-				</li>
-			</ul>
-			<p>
-				Lezgongue! <a
-				href="https://docs.astro.build/fr/getting-started/"
-				>La documentation</a> est disponible (en français).
-			</p>
-	</BaseLayout>
+	<div class="intro">
+		<h1 class="bienvenue">Bienvenue sur</h1>
+		<img src="/assets/HP.png" alt="" width="250" height="195">
+	</div>
+
+ 
+
+	<h2>Votre source d'actualités sportives à la pointe</h2>
 	
+	 
+	<p>Bienvenue sur Sport News, votre destination ultime pour rester informé(e) sur les dernières actualités sportives du monde entier. Que vous soyez passionné(e) de football, de basket-ball, de tennis, de formule 1 ou de tout autre sport, nous sommes là pour vous tenir au courant de tout ce qui se passe dans l'univers sportif.</p>
+	
+	 
+	
+	<p><strong>Sport News au coeur de l'action:</strong></p>
+	<p>Avec Sport News, vous ne manquerez plus jamais une seule information importante. Notre équipe de rédacteurs expérimentés et passionnés travaille sans relâche pour vous offrir des articles exclusifs, des analyses approfondies, des interviews captivantes et bien plus encore. Nous couvrons les grands événements sportifs internationaux ainsi que les actualités quotidiennes, pour que vous soyez toujours au cœur de l'action.</p>
+	
+	 	
+	<p><strong>Astuces & Conseils :</strong></p>
+	<p>En plus des actualités, Sport News vous propose également des conseils pratiques, des guides d'entraînement, des résumés de matchs et des classements mis à jour régulièrement. Que vous soyez un athlète amateur cherchant à améliorer vos performances ou un fan avide de statistiques et d'informations détaillées, nous avons tout ce qu'il vous faut.</p>
+	
+	 
+	
+	<p><strong>Les emotions du sport :</strong></p>
+	<p>Nous savons que le sport est un langage universel qui rassemble les gens et crée des moments d'émotion. C'est pourquoi Sport News met l'accent sur les histoires inspirantes, les exploits extraordinaires et les moments forts qui font vibrer les fans du monde entier. Nous sommes là pour célébrer les athlètes, découvrir de nouveaux talents et partager les moments les plus mémorables avec vous.</p>
+	
+	 
+	
+	<p><strong>Rejoignez nous :</strong></p>
+	<p>Que vous soyez un passionné de sport depuis toujours ou que vous découvriez tout juste votre intérêt pour une discipline spécifique, Sport News est là pour vous accompagner dans votre voyage sportif. Rejoignez notre communauté dynamique de lecteurs et partagez votre amour du sport avec des personnes qui partagent votre passion.</p>
+	
+	 
+	
+	<p><strong>Newsletter :</strong></p>
+	<p>N'oubliez pas de vous abonner à notre newsletter pour recevoir les dernières actualités directement dans votre boîte de réception. Vous pouvez également nous suivre sur les réseaux sociaux pour ne rien manquer de nos articles et pour interagir avec notre équipe et d'autres fans de sport.</p>
+	
+	 
+	
+	<p>Nous espérons que vous apprécierez votre expérience sur Sport News et que notre site deviendra votre source d'informations sportives privilégiée. Merci de nous rejoindre et bonnes lectures !</p>	
+
+	<a href="/blog" class="btn">Nos articles</a>
+</BaseLayout>
 
 <style>
-	body {
-		color: #C20E19;
+	.intro {
+		display: flex;
+		flex-flow: row wrap;
+		gap: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+	.intro > * {
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: 40%;
+	}
+
+	.intro img{
+		padding-top: 60px;
 	}
 </style>
